@@ -13,14 +13,14 @@ import sys, select, termios, tty
 
 
 def callback(data):
-    twist = Twist()
-    twist.linear.x = data.axes[1]
-    twist.angular.z = data.axes[0]
-    pub.publish(twist)
-
+    if data.buttons[4] == 1:
+        twist = Twist()
+        twist.linear.x = data.axes[1]
+        twist.angular.z = data.axes[0]
+        pub.publish(twist)
+    
 # Intializes everything
 def start():
-    # publishing to "turtle1/cmd_vel" to control turtle1
     global pub
     pub = rospy.Publisher('/husky_velocity_controller/cmd_vel', Twist, queue_size=10)
     # subscribed to joystick inputs on topic "joy"
@@ -30,4 +30,5 @@ def start():
     rospy.spin()
 
 if __name__ == '__main__':
+    rospy.set_param('/joy_node/autorepeat_rate', 10)
     start()
