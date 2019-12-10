@@ -12,6 +12,10 @@ How to use:
 
 (Terminal 4) $ roslaunch husky_gazebo husky_playpen.launch
 
+* It's recommended to follow the terminal order.
+* The Husky is controlled by the Left Analog Stick.
+* It has a deadman on the left bumper button (LB).
+
 Code based on these references:
 
 
