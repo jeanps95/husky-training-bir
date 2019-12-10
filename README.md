@@ -1,4 +1,4 @@
-# husky-training-bir
+# joy_ws
 
 Code created with the purpose of simulate a robot (Husky) from Clearpath Robotics.
 
