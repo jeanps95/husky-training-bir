@@ -1,8 +1,0 @@
-prefix=/home/jean/joy_ws/devel
-
-Name: joy_test
-Description: Description of joy_test
-Version: 0.0.0
-Cflags: 
-Libs: -L/home/jean/joy_ws/devel/lib 
-Requires: 

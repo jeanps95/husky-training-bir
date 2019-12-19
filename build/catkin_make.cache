@@ -1,2 +1,0 @@
-joy_test
--DCATKIN_DEVEL_PREFIX=/home/jean/joy_ws/devel -DCMAKE_INSTALL_PREFIX=/home/jean/joy_ws/install -G Unix Makefiles
